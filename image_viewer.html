@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Viewer</title>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.1/viewer.min.css"> -->
+<style>
+#imageToView {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+
+/* CSS for canvas border */
+#myCanvas {
+    border: 2px solid black; /* Adjust border properties as needed */
+    background-color: black;
+    cursor: default; /* Default cursor */
+
+}
+</style>
+</head>
+<body>
+<input type="file" id="fileInput" accept="image/*">
+<canvas id="myCanvas" width="800" height="700"></canvas>
+
+<!-- Div to display mouse coordinates -->
+<div id="coordinates" style="position: fixed; bottom: 10px; left: 10px;"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.1/viewer.min.js"></script>
+<script src="image_viewer.js"></script>
+
+</body>
+</html>
